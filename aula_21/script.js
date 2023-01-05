@@ -38,3 +38,24 @@ function exemple04() {
 
 let resultado = exemple04();
 console.log(resultado);
+
+/***********************************************************************************************************/
+
+function exemple05() {
+
+  let n1 = 10;
+  let n2 = 2;
+  let res = n1 + n2;
+
+  // Condition:
+  if (res % 2 == 0) {
+    return 'PAR!';
+  } else {
+    return 'ODD';
+  }
+
+}
+
+let res = exemple05();
+console.log(res);
+
