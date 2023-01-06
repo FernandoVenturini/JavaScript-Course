@@ -1,3 +1,72 @@
-.curso c1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255,255,0);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: 1px solid black;
+    width: 80vw;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#container .c1 {
+    color: white;
+    border: 1px solid #ffff00;
+    padding: .5rem;
+    margin: .2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 17vw;
+    text-align: center;
+}
+
+#container .c1:hover {
+    border: 1px solid white;
+    color: black;
+    background-color: #ffff00;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
 }
