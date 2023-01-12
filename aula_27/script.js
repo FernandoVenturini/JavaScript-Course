@@ -65,5 +65,5 @@ function* contador3() {
 }
 const itc5 = contador3();
 for(let c of itc3) {
-    console.log(c);
+    //console.log(c);
 }
