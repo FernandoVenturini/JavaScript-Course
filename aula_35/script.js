@@ -1,24 +1,24 @@
 const caixa1 = document.querySelector('#caixa1');
 const caixa2 = document.querySelector('#caixa2');
-const btn = document.querySelector('#btn_copiar');
-const btn2 = document.querySelector('#btn_transferir');
+const btnSend = document.querySelector('#btn_copiar');
+const btnBack = document.querySelector('#btn_transferir');
 const todosCursos = [...document.querySelectorAll('.curso')];
 
 todosCursos.map((el) => {
-    el.addEventListener('click', (evt) => {
-        const curso = evt.target;
+    el.addEventListener('click', (evento) => {
+        const curso = evento.target;
         curso.classList.toggle('selecionado');
     })
 })
 
-btn.addEventListener('click', () => {
+btnSend.addEventListener('click', () => {
     const cursosSelecionados = [...document.querySelectorAll('.selecionado')];
     cursosSelecionados.map((el) => {
         caixa2.appendChild(el);
     })
 })
 
-btn2.addEventListener('click', () => {
+btnBack.addEventListener('click', () => {
     const cursosNaoSelecionados = [...document.querySelectorAll('.curso:not(.selecionado)')];
     //console.log(cursosNaoSelecionados);
     cursosNaoSelecionados.map((el) => {
