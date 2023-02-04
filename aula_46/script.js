@@ -22,6 +22,7 @@ const criarNovoCurso = (curso) => {
     novoElemento.setAttribute("id","c" + indice)
     novoElemento.setAttribute("class","curso c1")
     novoElemento.innerHTML = curso;
+    
     novoElemento.addEventListener('click', (evt) => {
         tirarSelecao();
         evt.target.classList.toggle("selecionado");
