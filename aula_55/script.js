@@ -1,14 +1,15 @@
 const caixa = document.querySelector('#caixa');
 
-let musicas = new Set(['musica1', 'musica boa', 'musica10']);
+let musicas = new Set(['musica 1', 'musica 2', 'musica 3']);
 
-musicas.add('musica muito legal');
-musicas.add('musica1');
-musicas.add('musica1');
-musicas.add('musica10');
+musicas.add('musica 01');
+musicas.add('musica 02');
+musicas.add('musica 03');
+musicas.add('musica 04');
+musicas.add('musica 05');
 
-musicas.delete('musica1');
-musicas.clear();
+musicas.delete('musica 01');
+//musicas.clear();
 
 console.log(musicas);
 
