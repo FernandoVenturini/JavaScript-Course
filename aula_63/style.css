@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#criarCarro {
+    margin: 30px auto;
+    background-color: yellow;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.carros {
+    display: flex;
+    width: 50%;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.carro {
+    border: 2px solid #008;
+    background-color: #8cf;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    width: 200px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.campoForm input {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.campoForm button {
+    background-color: #888;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
