@@ -10,18 +10,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 5rem auto;
+    background-color: #eee;
+    border: 3px solid #bbb;
+    width: 245px;
+    border-radius: 5px;
 }
 
+/* TITLE */
 .div_name {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 240px;
 }
 
-.div_display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.title {
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 .div_teclas {
@@ -30,7 +36,6 @@
     align-items: center;
     width: 240px;
     flex-wrap: wrap;
-    border: 1px solid purple;
     border-radius: 5px;
     padding: 5px;
 }
@@ -40,8 +45,8 @@
     justify-content: center;
     align-items: center;
     background-color: #aaa;
-    border: 3px solid #888;
-    font-weight: bold;
+    border: 3px solid #353535;
+    font-size: 1.2rem;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -51,5 +56,24 @@
 
 .teclaOp {
     background-color: #f44 !important;
-    border-color: #800 !important;
+    border-color: rgb(75, 0, 0) !important;
+}
+
+/* DISPLAY */
+
+.div_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+}
+
+.display {
+    width: 220px;
+    background-color: #8a8;
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 1.5rem;
+    border-radius: 5px;
 }
