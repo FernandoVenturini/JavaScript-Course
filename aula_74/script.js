@@ -7,6 +7,8 @@ const teclaClean = document.getElementById('tClean');
 const tigual = document.getElementById('tigual');
 const tcpy = document.getElementById('tcpy');
 const teste = document.getElementById('teste');
+const calc_aba = document.getElementById('calc_aba');
+const calc = document.getElementById('calc');
 
 let sinal = false;
 let decimal = false;
@@ -69,3 +71,7 @@ tcpy.addEventListener('click', (event) => {
     navigator.clipboard.writeText(teste.value);
 })
 
+calc_aba.addEventListener('click', (event) => {
+    calc.classList.toggle('calc_exibir');
+    
+})

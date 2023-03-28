@@ -1,18 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     font-size: large;
 }
 
 .calc {
-    display: fle;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     position: absolute;
     top: 0;
     left: -230px;
+}
+
+.calc_exibir {
+    left: 0pc !important;
+    transition: all 0.2s;
 }
 
 .calc_principal {
