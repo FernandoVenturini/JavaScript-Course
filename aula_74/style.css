@@ -12,12 +12,13 @@
     align-items: center;
     flex-direction: row;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: -230px;
+    transition: all 0.2s;
 }
 
 .calc_exibir {
-    left: 0pc !important;
+    left: 0px !important;
     transition: all 0.2s;
 }
 

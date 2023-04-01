@@ -9,6 +9,7 @@ const tcpy = document.getElementById('tcpy');
 const teste = document.getElementById('teste');
 const calc_aba = document.getElementById('calc_aba');
 const calc = document.getElementById('calc');
+const img_aba_calc = document.getElementById('img_aba_calc');
 
 let sinal = false;
 let decimal = false;
@@ -71,7 +72,11 @@ tcpy.addEventListener('click', (event) => {
     navigator.clipboard.writeText(teste.value);
 })
 
-calc_aba.addEventListener('click', (event) => {
+calc_aba.addEventListener('click', (e) => {
     calc.classList.toggle('calc_exibir');
-    
+    if(calc.classList.contains('calc_exibir')){
+        e.target.setAttribute('src', 'arrow-left.svg');
+    } else {
+        e.target.setAttribute('src', 'arrow.svg');
+    }
 })
