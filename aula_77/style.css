@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxing;
+}
+
+#watch {
+    display: flex;
+    justify-content: center;
+    aligns-itens: center;
+    width: 200px;
+    background-color: #444;
+    color: #0f0;
+    font-family: 'Courier', sans-serif;
+    font-size: larger;
+    padding: 10px
+    border-radius: 5px;
+}
