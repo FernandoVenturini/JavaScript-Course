@@ -1,12 +1,12 @@
 const div_data = document.querySelector('#div_data');
 const watch = document.querySelector('#watch');
-const btn_ativar = document.querySelector('#btn_ativar');
-const btn_parar = document.querySelector('#btn_parar');
-const tmp_alarme = document.querySelector('#tmp_alarme');
-const hora_alarme = document.querySelector('#hora_alarme');
+const btn_ativar = document.querySelector('#btn_ativar'); // Alarme
+const btn_parar = document.querySelector('#btn_parar'); // Alarme
+const tmp_alarme = document.querySelector('#tmp_alarme'); // Alarme
+const hora_alarme = document.querySelector('#hora_alarme'); // Alarme
 const timer = document.getElementById('timer');
 
-let som_alarme = new Audio('alarme.mp3');
+let som_alarme = new Audio('alarme.mp3'); // Audio do Alarme
 som_alarme.loop = -1;
 
 let ts_atual = null;
@@ -14,15 +14,15 @@ let ts_alarme = null;
 let alarme_ativado = false;
 let alarme_tocando = false;
 
-btn_ativar.addEventListener('click',  () => {
-    ts_atual = Date.now();
-    ts_alarme = ts_atual + (tmp_alarme.value * 1000);
+btn_ativar.addEventListener('click',  () => { // Botao ativar do alarme
+    ts_atual = Date.now(); // Pega data atual
+    ts_alarme = ts_atual + (tmp_alarme.value * 1000); // Tempo do alarme recebe Tempo atual + o valor digitado no input definindo o tempo do alarme
     alarme_ativado = true;
     const dt_alarme = new Date(ts_alarme);
-    hora_alarme.innerHTML = 'Hora do alarme: ' + dt_alarme.getHours() + ':' + 
+    hora_alarme.innerHTML = 'Hora do alarme: ' + dt_alarme.getHours() + ':' + dt_alarme.getMinutes() + ':' + dt_alarme.getSeconds();
 })
 
-btn_parar.addEventListener('click', () => {
+btn_parar.addEventListener('click', () => { // Botao desativar o alarme
     alarme_ativado = false;
     alarme_tocando = false;
     hora_alarme.innerHTML = 'Hora do Alarme';
