@@ -1,5 +1,5 @@
 const div_data = document.querySelector('#div_data');
-const watch = document.querySelector('#watch');
+const div_relogio = document.querySelector('#watch');
 const btn_ativar = document.querySelector('#btn_ativar'); // Alarme
 const btn_parar = document.querySelector('#btn_parar'); // Alarme
 const tmp_alarme = document.querySelector('#tmp_alarme'); // Alarme
@@ -43,7 +43,16 @@ const relogio = () => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
     const time = hour + ':' + minutes + ':' + seconds;
-    watch.innerHTML = time;
+    div_relogio.innerHTML = time;
+
+    div_relogio.innerHTML = hora_completa;
+    if(alarme_ativado && !alarme_tocando) {
+        if(data.getTime() >= ts_alarme) {
+            alarme_tocando = true;
+            som_alarme.play();
+            timer.classList.add('alarme');
+        }
+    }
 }
 
 const interval = setInterval(relogio, 1000);
