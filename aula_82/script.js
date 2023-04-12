@@ -21,13 +21,44 @@ let numBola = 0;
 
 // Criando classe:
 class Bola {
-   constructor() {
+   constructor(arrayBolas, palco) {
       this.tam = Math.floor(Math.random() * 15) + 10; // Calculo do tamanho;
       this.r = Math.floor(Math.random() * 255); // Cor
       this.g = Math.floor(Math.random() * 255); // Cor
       this.b = Math.floor(Math.random() * 255); // Cor
       this.px = Math.floor(Math.random() * (larguraPalco - this.tam)); // Largura
       this.py = Math.floor(Math.random() * (alturaPalco - this.tam)); // Altura
+      this.velx = Math.floor(Math.random() * 2) + 0.5;
+      this.vely = Math.floor(Math.random() * 2) + 0.5;
+      this.dirx = (Math.random() * 10) > 5 ? 1 : -1;
+      this.diry = (Math.random() * 10) > 5 ? 1 : -1;
+      this.palco = palco;
+      this.arrayBolas = arrayBolas;
+      this.id = Date.now() + '_' + Math.floor(Math.random() * 100);
+      this.controle = setInterval(this.controlar, 10);
+      this.eu = document.getElementById(this.id);
+      this.desenhar();
+      numBola++;
+      num_objetos.innerHTML = numBola;
+   }
+   minhaPos = () => {
+      return this.arrayBolas.indexOf(this);
+   }
+   remover = () => {
+      clearInterval(this.controle);
+      bolas = bolas.filter((b) => {
+         if(b.id != this.id) {
+            return b;
+         }
+      })
+      this.eu.remove();
+      numBola--;
+   }   
+   desenhar =  () => {
+
+   }
+   controlar = () => {
+
    }
 }
 
@@ -47,7 +78,4 @@ btn_add.addEventListener('click', (evt) => {
 
 // Adicionando evento click no botao remover:
 btn_remover.addEventListener('click', (evt) => {
-   bolas.map((b) => {
-
-   })
-})
+   bolas.map(
