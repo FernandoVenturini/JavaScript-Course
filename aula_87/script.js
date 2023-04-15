@@ -9,5 +9,5 @@ btn_url.addEventListener('click', (evt) => {
     //window.history.back(); // Volta no historico da navegacao.
     //window.history.forward(); // Vai para a proxima pagina do historico de navegação.
     //window.history.go(1); // Informa a pagina que vc quer ir.
-    window.location = url.value; // Vai para a pagina que vc digitou a url.
+    //window.location = url.value; // Vai para a pagina que vc digitou a url.
 })
