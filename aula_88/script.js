@@ -20,7 +20,7 @@ btn_prompt.addEventListener('click', (e) => {
     if(nome == null) {
         console.log('Botao pressionado CANCELAR!');
     } else {
-        console.log('Nome digitado ' + nome);
+        console.log('Nome digitado: ' + nome);
     }
     
 })
