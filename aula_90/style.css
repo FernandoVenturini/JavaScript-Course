@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(232, 232, 15);
+}
+
 .objetos {
     display: flex;
     justify-content: center;
