@@ -24,7 +24,7 @@ const clonar1 = {obj: '1'}
 const clonar2 = {obj: '2'}
 const clonar3 = {obj: '3'}
 const clonar4 = Object.assign(clonar1, clonar2, clonar3);
-console.log(clonar4);
+console.log(clonar4);   
 
 // Exemplo 02: Usando o delete:
 delete(computador.hd);
