@@ -1,6 +1,7 @@
-const cursos = ['JavaScript', 'Python', 'React'];
+// Criando um array:
+const cursos = ['JavaScript','HTML', 'CSS', 'Python', 'React.js'];
 
-const carros = ['Aston Martin', 'BMW', 'Lamborghini'];
+const carros = ['BMW', 'Aston Martin', 'Lamborghini'];
 
-export {cursos, carros};
-//export {carros};
+// Para disponibilizar esse modulo, coloca: export + o nome da variavel
+export { cursos, carros };
