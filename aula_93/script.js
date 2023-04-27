@@ -1,7 +1,39 @@
-import getTodosCursos from './cursos3.js';
-//import { cursos as c, getCurso as gc} from './cursos3.js';
-import * as m_cursos from './cursos3.js';
+/* 1- Exemplo:
+import { cursos } from './cursos2.js'
+console.log(cursos);
+*/
 
-console.log(m_cursos.cursos);
-console.log(m_cursos.getCurso(1));
-console.log(m_cursos.default());
+/* 2- Exemplo:
+import { cursos, getTodosCursos } from './cursos2.js';
+console.log(cursos);
+console.log(getTodosCursos());
+*/
+
+/* 3- Exemplo: 
+import { cursos } from "./cursos2.js"
+import getTodosCursos from "./cursos2.js"
+console.log(cursos);
+console.log(getTodosCursos());
+*/
+
+/* 4- Exemplo: 
+import { cursos } from "./cursos2.js";
+import getTodosCursos from "./cursos2.js";
+console.log(cursos);
+console.log(getTodosCursos());
+*/
+
+/* 5- Exemplo: 
+import { cursos } from "./cursos2.js";
+import getTodosCursos from "./cursos2.js";
+console.log(cursos);
+console.log(getTodosCursos());
+*/
+
+import { cursos } from "./cursos2.js";
+import getTodosCursos from "./cursos2.js";
+import { getCurso } from "./cursos2.js";
+
+console.log(cursos);
+console.log(getTodosCursos());
+console.log(getCurso(2));

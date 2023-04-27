@@ -1,12 +1,17 @@
+// Importando o array = contatos da pasta bancoContatos.js:
 import { contatos } from './bancoContatos.js';
 
+// Criando objeto:
 let contato = {
+    // Criando Primeira funcao: obtem todos contatos;
     getTodosContatos: function() {
         return contatos
     },
+    // Criando Segunda funcao: obtem um contato especifico;
     getContato: function(i_cont) {
         return contatos[i_cont]
     },
+    // Criando Terceira funcao: Adiciona um contato;
     addContato: function(novoContato, destinoDom) {
         const cont = {
             nome: novoContato.nome,

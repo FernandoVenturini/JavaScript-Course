@@ -1,16 +1,10 @@
-import c from './contatos.js';
+/* 1- Exemplo: 
+import Cursos from "./cursos4.js";
+console.log(Cursos.getTodosCursos());
+*/
 
-const listaContatos = document.getElementById('listaContatos');
-const btn_gravar = document.getElementById('btn_gravar');
+/* 2- Exemplo: */
+import c from './cursos4.js'
 
-btn_gravar.addEventListener('click', (evt) => {
-
-    const cont = {
-        nome: document.getElementById('f_nome').value,
-        telefone: document.getElementById('f_telefone').value,
-        email: document.getElementById('f_email').value
-    }
-    
-    c.addContato(cont, listaContatos);
-    console.log(c.getTodosContatos());
-})
+c.addCurso('Node.Js');
+console.log(c.getTodosCursos());

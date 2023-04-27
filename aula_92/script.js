@@ -1,4 +1,4 @@
-// Importando a variavel de array cursos do arquivo cursos.js:
-import { cursos, carros } from "./cursos.js";
+// Importando as variaveis dos arrays= cursos, carros, paiEfilhos do arquivo cursos.js:
+import { cursos, carros, paiEfilhos } from "./cursos.js";
 
-console.log(cursos, carros);
+console.log(cursos, carros, paiEfilhos);

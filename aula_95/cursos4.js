@@ -1,6 +1,9 @@
 class Cursos {
+    
     static cursos = ['JavaScript', 'HTML', 'CSS'];
+    constructor(){};
 
+    // Adicionando metodos dentro das classes:
     static getTodosCursos = () => {
         return this.cursos;
     }
