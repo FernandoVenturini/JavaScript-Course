@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid #000;
+    width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
