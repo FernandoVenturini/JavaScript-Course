@@ -1,0 +1,11 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid #000;
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+}
