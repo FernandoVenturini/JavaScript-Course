@@ -38,8 +38,8 @@ let contato = {
             div.appendChild(p_email);
             destinoDom.appendChild(div);
         })
-
     }
+    
 }
 
 export default contato;

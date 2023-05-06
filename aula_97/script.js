@@ -1,9 +1,11 @@
 // Importando cursos da pasta contatos.js:
+import { contatos } from './bancoContatos.js';
 import c from './contatos.js';
 
 // Criando as variaveis que tem no HTML:
 const listaContatos = document.getElementById('listaContatos');
 const btn_gravar = document.getElementById('btn_gravar');
+const btn_lixeira = document.getElementById('btn_lixeira');
 
 // Adicionando evento de clique no botao:
 btn_gravar.addEventListener('click', (evt) => {
@@ -17,4 +19,5 @@ btn_gravar.addEventListener('click', (evt) => {
     
     c.addContato(cont, listaContatos);
     console.log(c.getTodosContatos());
+
 })

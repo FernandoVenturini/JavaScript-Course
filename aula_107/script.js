@@ -1,12 +1,14 @@
+// Declarando as variaveis dos botoes:
 const btn_esquerda = document.querySelector('#btn_esquerda');
 const btn_direita = document.querySelector('#btn_direita');
+
+// Declarando a variavel da div carro:
 const carro = document.querySelector('#carro');
 
-// Function para iniciar o processo de inicializacao da animacao:
+// Criando uma function para iniciar o processo de inicializacao da animacao:
 const init = () => {
-    // Colocando a div carro na posicao relative:
+    // Colocando a 'div carro' na posicao relative para poder animar e Adicionando left no css:
     carro.style = 'position: relative; left: 0px';
-    // Adicionando left no css:
 }
 
 // Animacao:
