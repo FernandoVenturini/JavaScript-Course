@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpensSans', sans-serif;
+}
+
+body {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid #000;
+    width: 50vw;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
