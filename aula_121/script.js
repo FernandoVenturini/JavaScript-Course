@@ -27,3 +27,6 @@ alert(localStorage.length);
 localStorage.key();
 //alert(localStorage.key(0));
 alert(localStorage.getItem(localStorage.key(0)));
+
+
+// sessionStorage:
