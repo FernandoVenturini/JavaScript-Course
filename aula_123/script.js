@@ -19,4 +19,7 @@ const obterDados = () => {
 }
 obterDados();
 
-let intervalo = setInterval(obterDados, 3000);
+btn_texto.addEventListener('click', () => {
+    obterDados();
+})
+//let intervalo = setInterval(obterDados, 3000);
