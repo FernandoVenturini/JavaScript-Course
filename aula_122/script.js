@@ -8,4 +8,4 @@ let res = fetch(endpoint)
 })
 .then(datos => {
     consoloe.log(datos);
-})
+})    
