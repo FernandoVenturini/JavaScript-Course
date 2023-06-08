@@ -1,0 +1,4 @@
+{
+	"canal": 'CFB Cursos',
+	"curso":'JavaScript'
+}
