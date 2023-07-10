@@ -1,7 +1,7 @@
 const head = document.head;
 const body = document.body;
 
-const style = "<link rel='stylesheet' href='topo.css'></link>";
+const style = "<link rel='stylesheet' type='text/css' href='topo.css'/>";
 head.innerHTML += style;
 
 // Criando a div topo:
@@ -12,8 +12,8 @@ body.prepend(topo);
 
 // Acrescentando conteudo dentro da div:
 const logo = 
-    "<div id='logo' class='logo'>" +
-        "<img src='logo.jpg' title='CFB Cursos'/>"
+    "<div id='logo' class='logo'>"+
+        "<img src='logo.png' title='CFB Cursos'/>"+
     "</div>"
 topo.innerHTML += logo;
 

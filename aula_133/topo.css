@@ -2,5 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eee;
+    background-color: #00f;
+}
+
+.logo img {
+    width: 200px;
 }
