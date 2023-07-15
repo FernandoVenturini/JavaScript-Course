@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
-.btn_mostrarcxmsg {
+.btn_showmsgbox {
     padding: 10px 40px;
     cursor: pointer;
     border-radius: 5px;

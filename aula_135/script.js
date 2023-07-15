@@ -1,13 +1,14 @@
 const config = {
-    titulo: 'Teste',
-    texto: 'CFB Cursos',
-    cor: '#48f'
+    title: "Teste",
+    text: "CFB Cursos",
+    color: "#48f"
 }
 
+// Instanciando novo objeto:
 const cxmsg = new Cxmsg(config);
 
 
-const btn_mostrarcxmsg = document.querySelector('#btn_mostrarcxmsg');
-btn_mostrarcxmsg.addEventListener('click', () => {
-    cxmsg.mostrar();
+const btn_showmsgbox = document.querySelector('#btn_showmsgbox');
+btn_showmsgbox.addEventListener('click', () => {
+    cxmsg.show();
 })
