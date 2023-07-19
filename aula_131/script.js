@@ -1,3 +1,10 @@
+import {Cxmsg} from '../aula_137/cxmsg.js';
+
+const config = {
+    color: "#080"
+}
+Cxmsg.config(config);
+
 const timer = document.querySelector('#timer');
 const btn_iniciar = document.querySelector('#btn_iniciar');
 const btn_parar = document.querySelector('#btn_parar');
@@ -30,10 +37,12 @@ btn_iniciar.addEventListener('click', (evt) => {
 
 btn_parar.addEventListener('click', (evt) => {
     clearInterval(intervalo);
+    Cxmsg.show("Cronometro","Cronometro parado!");
 })
 
 btn_zerar.addEventListener('click', (evt) => {
     tmpini = Date.now();
     timer.innerHTML = "00:00:00";
     clearInterval(intervalo);
+    Cxmsg.show("Cronometro","O cronometro foi zerado!");
 })
