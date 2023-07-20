@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 139 - Simulando eventos em variaveis no JavaScript com GET e SET</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Aula 139 - Simulando eventos em variaveis no JavaScript com GET e SET</h1>
+
+    <div style="width: 80%; margin: auto;">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+            // Exemplo fictício de dados (substitua pelos seus próprios dados)
+            const vendasPorMes = [120, 80, 150, 100, 200, 180, 160, 190, 170, 130, 110, 140];
+
+            const ctx = document.getElementById('grafico').getContext('2d');
+            const myChart = new Chart(ctx, {          
+                type: 'bar',
+                data: { 
+                    labels: meses,
+                    datasets: [{
+                        label: 'Vendas por mês',
+                        data: vendasPorMes,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -32,5 +32,6 @@ btn_showmsgbox3.addEventListener('click', () => {
     //cxmsg.show("JavaScript!", "Aula 136");
     config.tipo = "sn";
     config.textos = ["OK", "CANCELA"];
+    config.comando_sn = () => {};
     Cxmsg.show(config, "JavaScript!", "Aula 136");
 })
