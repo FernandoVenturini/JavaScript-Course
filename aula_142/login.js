@@ -6,7 +6,7 @@ static acessologado = null;
 static endpoint = "https://loginv1.cfbcursos.repl.co/";
 
     static login = (mat, pas) => {
-        this.endpoint += `?matricula = ${mat} & senha = ${pas}`;
+        this.endpoint += `?matricula=${mat}&senha=${pas}`;
         fetch(this.endpoint)
         .then(response => response.json())
         .then(response => {

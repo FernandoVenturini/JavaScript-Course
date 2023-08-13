@@ -80,14 +80,14 @@ h1 {
 
 .campoLogin label{
     font-size: 18px;
-    color: #048;
+    color: #000;
 }
 
 .campoLogin input{
-    font-size: 14px;
+    font-size: 18px;
     padding: 5px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .botoesLogin{

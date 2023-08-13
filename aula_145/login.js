@@ -7,7 +7,7 @@ static estilocss = null;
 static endpoint = "https://loginv1.cfbcursos.repl.co/";
 
     static login = (mat, pas) => {
-        this.endpoint += `?matricula = ${mat} & senha = ${pas}`;
+        this.endpoint += `?matricula=${mat}&senha=${pas}`;
         this.estilocss = 
         ".fundoLogin {display: flex;justify-content: center;align-items: center;width: 100%;height: 100vh;position: absolute;top: 0px;left: 0px;background-color: rgba(0, 0, 0, 0.75);box-sizing: border-box;}"+
         ".baseLogin {display: flex;justify-content: center;align-items: stretch;width: 50%;box-sizing: inherit;}"+
@@ -20,13 +20,14 @@ static endpoint = "https://loginv1.cfbcursos.repl.co/";
         ".botoesLogin{display: flex;justify-content: space-around;align-items: center;width: 100%;box-sizing: inherit;gap: 1rem;}"+        
         ".botoesLogin button{cursor: pointer;background-color: #048;color: #fff;border-radius: 5px;padding: 10px;width: 100%;box-sizing: inherit;}"
         
-        const styleEstilo = document.createElement("style");
+        const styleEstilo = document.createElement("link");
         styleEstilo.setAttribute("id", "id_estiloLogin");
         styleEstilo.setAttribute("rel", "stylesheet");
         styleEstilo.setAttribute("type", "text/css");
         styleEstilo.innerHTML = this.estilocss;
         document.head.appendChild(styleEstilo);
-        //<link rel="stylesheet" href="style.css"></link>
+        //<link rel="stylesheet" type="text/css" href="style.css"></link>
+        
         /*
         fetch(this.endpoint)
         .then(response => response.json())
