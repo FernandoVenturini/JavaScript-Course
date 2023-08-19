@@ -20,7 +20,7 @@ static endpoint = "https://loginv1.cfbcursos.repl.co/";
         ".botoesLogin{display: flex;justify-content: space-around;align-items: center;width: 100%;box-sizing: inherit;gap: 1rem;}"+        
         ".botoesLogin button{cursor: pointer;background-color: #048;color: #fff;border-radius: 5px;padding: 10px;width: 100%;box-sizing: inherit;}"
         
-        const styleEstilo = document.createElement("link");
+        const styleEstilo = document.createElement("style");
         styleEstilo.setAttribute("id", "id_estiloLogin");
         styleEstilo.setAttribute("rel", "stylesheet");
         styleEstilo.setAttribute("type", "text/css");
