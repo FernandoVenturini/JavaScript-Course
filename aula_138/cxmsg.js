@@ -26,7 +26,8 @@ class Cxmsg {
             "left: 0px;"+
             "width: 100%;"+
             "height: 100vh;"+
-            "background-color: rgba(0,0,0,0.7);"
+            "background-color: rgba(0,0,0,0.7);"+
+            "z-index: 1";
         // Setando as propriedades da div:
         this.divmsg.setAttribute("id", "divmsg");
         this.divmsg.setAttribute("style", estilo_divmsg);
@@ -109,6 +110,7 @@ class Cxmsg {
             btn_Cxmsg.setAttribute("style", estilo_btnCxmsg);
             btn_Cxmsg.innerHTML = "OK";
             btn_Cxmsg.addEventListener('click', (evt) => {
+                this.comando_sn();
                 this.hide();
             })
             footer_Cxmsg.appendChild(btn_Cxmsg);
