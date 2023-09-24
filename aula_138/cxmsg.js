@@ -110,8 +110,8 @@ class Cxmsg {
             btn_Cxmsg.setAttribute("style", estilo_btnCxmsg);
             btn_Cxmsg.innerHTML = "OK";
             btn_Cxmsg.addEventListener('click', (evt) => {
-                this.comando_sn();
                 this.hide();
+                this.comando_sn();
             })
             footer_Cxmsg.appendChild(btn_Cxmsg);
         } else if(this.tipo == "sn") {
