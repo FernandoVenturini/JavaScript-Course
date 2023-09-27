@@ -10,7 +10,7 @@ class Login {
     static callback_naook = null;
     static config = {
         cor: "#048",
-        img: "./logo-removebg-preview (1).png"
+        img: "./logo.png"
     };
     static endpoint = "https://loginv1.cfbcursos.repl.co/";
 
@@ -172,4 +172,4 @@ class Login {
     }
 }
 
-export {Login};
+//export {Login};

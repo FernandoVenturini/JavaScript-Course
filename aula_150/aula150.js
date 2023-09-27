@@ -1,10 +1,10 @@
-import { Login } from "./login.js";
+//import { Login } from "./login_cfbcursos.js";
 import { Cxmsg } from "../aula_138/cxmsg.js";
 
 const callback_ok = () => {
     //alert("Ok!");
     const config = {
-        color: "#0f0",
+        color: "#009f00",
         tipo: "ok",
         textos: null,
         comando_sn: null,
