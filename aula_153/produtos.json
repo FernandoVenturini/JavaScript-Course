@@ -1,0 +1,26 @@
+[
+    {
+        "id": "d1",
+        "produto": "Processador",
+        "marca": "Intel",
+        "modelo": "i7"
+    },
+    {
+        "id": "d2",
+        "produto": "Mouse",
+        "marca": "Logitech",
+        "modelo": "M90"
+    },
+    {
+        "id": "d3",
+        "produto": "Monitor",
+        "marca": "Samsung",
+        "modelo": "Sytemmaster"
+    },
+    {
+        "id": "d4",
+        "produto": "Impressora",
+        "marca": "HP",
+        "modelo": "P1005"
+    }
+]
