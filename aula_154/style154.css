@@ -38,6 +38,17 @@
     align-self: flex-start;
     flex-direction: row;
 }
+.dgvLinha:nth-child(odd) {
+    background-color: #aaa;
+}
+.dgvLinha:nth-child(even) {
+    background-color: #ddd;
+}
+.dgvLinha:hover{
+    background-color: #088;
+    cursor: pointer;
+    color: #fff;
+}
 .c1 {
     width: 50px;
 }
