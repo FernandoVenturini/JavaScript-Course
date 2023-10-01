@@ -1,5 +1,5 @@
 const configdgv = {
-    endpoint: "produtos.json",
+    endpoint: "produtos.json",//"https://127.0.0.1:1880/produtos"
     idDestino: "dgvDados",
 }
 const dgv = (configdgv) => {
