@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar</title>
+    <link rel="stylesheet" href="aula165.css">
+</head>
+
+<body>
+    <div id="pesquisa" class="pesquisa">
+        <div class="campoPesq">
+            <label>ID</label>
+            <input type="radio" name="f_pesq" value="id" id="">
+        </div>
+        <div class="campoPesq">
+            <label>Nome</label>
+            <input type="radio" name="f_pesq" value="nome" id="" checked>
+        </div>
+        <div class="campoPesq">
+            <label>Data Nascimento</label>
+            <input type="radio" name="f_pesq" value="nasc" id="">
+        </div>
+        <div class="campoPesq">
+            <label>Email</label>
+            <input type="radio" name="f_pesq" value="email" id="">
+        </div>
+        <div class="campoPesq">
+            <label>Pesquisar</label>
+            <input type="text" name="f_txtpesq" id="f_txtpesq">
+        </div>
+        <div class="campoPesq">
+            <button id="btn_pesq" class="btn_geral">Pesquisar</button>
+        </div>
+    </div>
+
+    <div id="resultado">
+
+    </div>
+
+    <script src="pesquisar.js" type="module"></script>
+</body>
+
+</html>
