@@ -4,7 +4,7 @@ const f_txtpesq = document.querySelector("#f_txtpesq");
 btn_pesq.addEventListener('click', (evt) => {
    const valorpesq = f_txtpesq.value;
    if(valorpesq == "" ){
-      alert("Digite a pesquisa!");
+      //alert("Digite a pesquisa!");
       f_txtpesq.focus();
       return;
    }
