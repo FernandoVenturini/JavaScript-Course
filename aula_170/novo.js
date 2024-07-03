@@ -11,10 +11,11 @@ btn_gravar.addEventListener("click", (evt) => {
         "f_nome": f_nome.value,
         "f_celular": f_celular.value,
         "f_email": f_email.value,
-        "f_dtnasc": f_dtnasc.value
+        "f_dtnasc": f_dtnasc.value,
+        "f_address": f_address.value
     }
     const cabecalho = {
-        method: "POST",
+        method: "POST",                  
         body:JSON.stringify(dados)
     }
     const endpoint = "http://127.0.0.1:1880/addcontatos"
@@ -22,7 +23,11 @@ btn_gravar.addEventListener("click", (evt) => {
     //.then(res => res.json())
     .then(res => {
         if(res.status == 200){
-            reset();
+            f_nome.value = "";
+            f_celular.value = "";
+            f_email.value = "";
+            f_dtnasc.value = "";
+            f_nome.focus();
         } else {
             alert("Erro ao gravar novo contato!");
         }
