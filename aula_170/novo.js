@@ -11,8 +11,7 @@ btn_gravar.addEventListener("click", (evt) => {
         "f_nome": f_nome.value,
         "f_celular": f_celular.value,
         "f_email": f_email.value,
-        "f_dtnasc": f_dtnasc.value,
-        "f_address": f_address.value
+        "f_dtnasc": f_dtnasc.value
     }
     const cabecalho = {
         method: "POST",                  
