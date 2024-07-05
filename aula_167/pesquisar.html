@@ -5,13 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisar</title>
-    <link rel="stylesheet" href="aula165.css">
+    <link rel="stylesheet" href="agenda.css">
 </head>
 
 <body>
     <h1>Pesquisar</h1>
 
-    <script src="agenda.js"></script>
+    <div id="pesquisa">
+        <div class="campoPesq">
+            <label for="">ID</label>
+            <input type="radio" name="f_pesq" value="id">
+        </div>
+        <div class="campoPesq">
+            <label for="">Nome</label>
+            <input type="radio" name="f_pesq" value="nome" checked>
+        </div>
+        <div class="campoPesq">
+            <label for="">Data Nascimento</label>
+            <input type="radio" name="f_pesq" value="nasc">
+        </div>
+        <div class="campoPesq">
+            <label for="">Email</label>
+            <input type="radio" name="f_pesq" value="email">
+        </div>
+        <div class="campoPesq">
+            <label for="">Pesquisar</label>
+            <input type="text" name="f_txtpesq" id="f_txtpesq">
+        </div>
+        <div class="campoPesq">
+            <button id="btn_pesq" class="btn_geral">Pesquisar</button>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+
+
+    <script src="pesquisar.js"></script>
 </body>
 
 </html>

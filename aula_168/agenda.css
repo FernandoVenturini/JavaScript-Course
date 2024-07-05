@@ -100,28 +100,27 @@
 }
 /*END NOVO*/
 
-/*START PESQUISAR*/
-.pesquisa{
+/* PESQUISAR */
+#pesquisa {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    flex-direction: row;
     margin: 10px;
 }
-.campoPesq{
+.campoPesq {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
 }
-input[type=text]{
+
+.campoPesq [type=text] {
     border: 1px solid #f00;
     padding: 5px;
     border-radius: 5px;
 }
-label{
+
+.campoPesq label {
     margin-right: 5px;
 }
-
-/*END PESQUISAR*/

@@ -6,6 +6,7 @@ const f_email = document.querySelector("#f_email");
 const f_dtnasc = document.querySelector("#f_dtnasc");
 
 btn_gravar.addEventListener("click", (evt) => {
+    evt.preventDefault();
     const dados = {
         "f_nome": f_nome.value,
         "f_celular": f_celular.value,
@@ -15,16 +16,28 @@ btn_gravar.addEventListener("click", (evt) => {
     
     const cabecalho = {
         method: "POST",
-        body: JSON.stringify(valores)
+        body: JSON.stringify(dados)
     }
-    const endpoint = "https://127.0.0.1:1880/contatos"
+    const endpoint = "http://127.0.0.1:1880/#flow/f53933041f83e40e"
     fetch(endpoint, cabecalho)
-    .then(res => res.json())
     .then(res => {
         if(res.status == 200){
-            console.log("OK!");
+            reset();
         } else {
             alert("Erro ao gravar contato!");
         }
     })
-})
+});
+
+btn_cancelar.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    reset();
+});
+
+const reset = () => {
+    f_nome.value = "";
+    f_celular.value = "";
+    f_email.value = "";
+    f_dtnasc.value = "";
+    f_nome.focus();
+}
