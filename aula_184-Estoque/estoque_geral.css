@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menuPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 240px;
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    transition: all .2s;
+}
+
+.ocultar {
+    left: -190px !important;
+    transition: all .2s;
+}
+
+.menuItens {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #ccc;
+    height: 100%;
+}
+
+.btn_menuItem {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #888;
+    text-align: center;
+    color: #fff;
+
+}
+
+.btn_menuPrincipal {
+    cursor: pointer;
+    border: none;
+    width: 30px;
+}
+
+.btn_menuPrincipal img {
+    width: inherit;
+}
+

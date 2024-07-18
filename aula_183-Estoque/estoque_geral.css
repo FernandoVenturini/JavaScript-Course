@@ -1,0 +1,41 @@
+.menuPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 240px;
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.ocultar {
+    left: -210px !important;
+}
+
+.menuItens {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #aaa;
+    height: 100%;
+}
+
+.btn_menuItem {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    width: 200px;
+}
+
+.btn_menuPrincipal {
+    cursor: pointer;
+    width: 30px;
+    border: 1px solid red;
+}
+
+.btn_menuPrincipal img {
+    width: inherit;
+}
+
